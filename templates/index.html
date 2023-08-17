@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} From England to Istanbul {% endblock %}</h1>
+    <b>Site still under construction...</b>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1Bj4wkV2Py7nZ-nhhhLkQomjnbG1dnj4&ehbc=2E312F" width="640" height="480"></iframe>
+    {% for post in posts %}
+        <a href="{{ url_for('post', post_id=post['id']) }}">
+            <h2>{{ post['title'] }}</h2>
+        </a>
+        <span class="badge badge-primary">{{ post['created'] }}</span>
+        <hr>
+    {% endfor %}
+{% endblock %}
