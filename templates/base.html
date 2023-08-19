@@ -19,7 +19,27 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="{{ url_for('causes')}}">Causes</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('route')}}">Route</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://from-england-to-istanbul.blogspot.com">Journal</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('post_a_message')}}">Post a message!</a>
+            </li>
+            </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul">Donate</a>
             </li>
             </ul>
         </div>
