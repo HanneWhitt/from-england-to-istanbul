@@ -4,29 +4,34 @@
 <h1>{% block title %} Leave a message! {% endblock %}</h1>
 <form method="post">
     <div class="form-group">
-        <label for="Your Name">Your Name</label>
-        <input type="text" name="Your Name"
+        <label for="your_name">Your Name</label>
+        <input type="text" name="your_name"
                placeholder="Anonymous" class="form-control"
-               value="{{ request.form['Your Name'] }}"></input>
+               value="{{ request.form['sponsorship_currency'] }}"></input>
     </div>
     <div class="form-group">
         <label for="title">Sponsorship Currency</label>
-        <select class="form-select" id="currency" name="currency">
+        <select class="form-select" id="sponsorship_currency" name="sponsorship_currency">
             <option value="GBP"> £ </option>
             <option value="USD"> $ </option>
             <option value="EUR"> € </option>
         </select>
     </div>
     <div class="form-group">
-        <label for="title">Sponsorship Amount</label>
-        <input type="text" name="title"
+        <label for="sponsorship_amount">Sponsorship Amount*</label>
+        <input type="text" name="sponsorship_amount"
                placeholder="0" class="form-control"
-               value="{{ request.form['title'] }}"></input>
+               value="{{ request.form['sponsorship_amount'] }}"></input>
     </div>
     <div class="form-group">
-        <label for="content">Message</label>
-        <textarea name="content" placeholder="Write me a message!"
-                  class="form-control">{{ request.form['Message'] }}</textarea>
+        <label for="your_message">Message</label>
+        <textarea name="your_message" placeholder="Write me a message!"
+                  class="form-control">{{ request.form['your_message'] }}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="your_email">Your email (just so I can send a thank you! Not shown on site)</label>
+        <textarea name="your_email" placeholder=""
+                  class="form-control">{{ request.form['your_email'] }}</textarea>
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Submit</button>
