@@ -3,9 +3,8 @@ import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 import csv
-import sys
-import datetime
-import pytz
+
+
 
 
 def store_message(row):
@@ -20,26 +19,19 @@ def fetch_messages(limit=None):
     times = query.fetch(limit=limit)
     return times
 
-
-csv_file_path = '/var/www/from-england-to-istanbul/sponsorship.csv'
-fieldnames = ['id', 'date', 'time', 'your_name','sponsorship_currency','sponsorship_amount','your_message','your_email']    
-
-
 def read():
-    pwd = os.getcwd()
-    print(pwd)
-    with open() as csv_file:
+    with open('sponsorship.csv') as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter=',')
         return [d for d in csv_reader]
+    
 
-
-def write_new_row(old_rows, new_dict):
-    with open('/var/www/from-england-to-istanbul/sponsorship.csv', mode='w') as csv_file:
-        csv_writer = csv.DictWriter(csv_file, fieldnames, delimiter=',')
-        writer.writeheader()
+def write_new_row(old_rows, new_row_list):
+    with open('sponsorship.csv', mode='w') as csv_file:
+        csv_writer = csv.writer(csv_file, delimiter=',')
+        csv_writer.writerow(['id','your_name','sponsorship_currency','sponsorship_amount','your_message','your_email'])
         for d in old_rows:
             csv_writer.writerow(d.values())
-        csv_writer.writerow(new_dict)
+        csv_writer.writerow(new_row_list)
 
 
 def get_worksheet():
@@ -127,14 +119,9 @@ def post_a_message():
         if not sponsorship_amount:
             flash('Sponsorship amount is required!')
         else:
-            
-            dt = datetime.now(pytz.timezone('Europe/London'))
-            date = dt.strftime('%d %b %Y')
-            time = dt.strftime('%H:%M')
-
             rows = read()
             new_id = len(rows)
-            new_row = [new_id, date, time, your_name, sponsorship_currency, sponsorship_amount, your_message, your_email]
+            new_row = [new_id, your_name, sponsorship_currency, sponsorship_amount, your_message, your_email]
             write_new_row(rows, new_row)
         return redirect(url_for('index'))
 

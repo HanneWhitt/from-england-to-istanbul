@@ -1,11 +1,11 @@
-{% extends 'base.html' %}
+{% extends 'templates/base.html' %}
 
 {% block content %}
     <br>
+    <h1>{% block title %} From England to Istanbul {% endblock %}</h1>
     <br>
-    <h1>{% block title %}My name is Hannes, and I'm taking my bike on a solo journey of 5,000km from my hometown of Cambridge, UK, to the ancient city of Constantinople in Turkey.</b> {% endblock %}</h1>
-    <br>
-    <p>Beginning on 23rd August 2023, it will be a long, arduous, exhausting, painful, and wonderful journey of one man, one bike, and one overcomplicated camping hammock. I am doing it to try to raise $12,000 to support three causes: .</p>
+    <p><b>testMy name is Hannes, and I am taking my bike on a solo journey of 5,000km from my hometown of Cambridge, UK, to the ancient city of Constantinople in Turkey.</b>
+    Beginning on 22nd August 2023, it will be a long, arduous, exhausting, painful, and wonderful journey of one man, one bike, and one overcomplicated camping hammock. I am doing it to try to raise $12,000 to support three causes.</p>
     <p>Each cause is quite different, but they have one thing in common: they are chosen so as to do as much good as possible with the money, on the basis of strong evidence collected by Giving What We Can and other independent evaluators. No wishful thinking, corruption or administrative inefficiencies here; only real people and real help.</p>
     
     <p>If you make a donation, <b>be sure to let me know and post a message</b> via <a href="{{ url_for('post_a_message') }}"> this form</a>!

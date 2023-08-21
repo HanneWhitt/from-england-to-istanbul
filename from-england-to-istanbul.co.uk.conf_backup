@@ -1,0 +1,22 @@
+<VirtualHost *:80>
+   ServerName from-england-to-istanbul.co.uk
+   Redirect permanent / https://from-england-to-istanbul.co.uk
+</VirtualHost>
+<VirtualHost *:443>
+	ServerName from-england-to-istanbul.co.uk
+	ServerAlias www.from-england-to-istanbul.co.uk
+	ServerAdmin hannes.whittingham@gmail.com
+	DocumentRoot /var/www/from-england-to-istanbul/templates
+	ErrorLog /var/www/from-england-to-istanbul/apache-error.log
+	CustomLog /var/www/from-england-to-istanbul/apache-access.log combined
+	TransferLog /var/www/from-england-to-istanbul/apache-out.log
+	WSGIScriptAlias / /var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi
+	<Directory /var/www/from-england-to-istanbul/static>
+		Order deny,allow
+		Allow from all
+	</Directory>
+	SSLEngine on
+	SSLCertificateFile /etc/ssl/from-england-to-istanbul.co.uk_ssl_certificate.cer
+	SSLCertificateKeyFile /etc/ssl/_.from-england-to-istanbul.co.uk_private_key.key
+	SSLCACertificateFile /etc/ssl/_.from-england-to-istanbul.co.uk_ssl_certificate_INTERMEDIATE.cer
+</VirtualHost>

@@ -1,3 +1,4 @@
-id,your_name,sponsorship_currency,sponsorship_amount,your_message,your_email
-0,Anonymous,USD,32,,
-1,Hannes Whittingham,USD,6000,,
+id,date,time,your_name,sponsorship_currency,sponsorship_amount,your_message,your_email
+0,18 Aug 2023,21:00,Anonymous,USD,32,,
+1,21 Aug 2023,17:10,Hannes Whittingham,GBP,5000,Transaction in progress.,
+0,21 Aug 2023,17:22,Anonymous,GBP,150,,

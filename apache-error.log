@@ -1,0 +1,452 @@
+[Sun Aug 20 15:56:43.558720 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354] ERROR:main:Exception on / [GET]
+[Sun Aug 20 15:56:43.558782 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354] Traceback (most recent call last):
+[Sun Aug 20 15:56:43.558787 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 15:56:43.558793 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]     response = self.full_dispatch_request()
+[Sun Aug 20 15:56:43.558798 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 15:56:43.558802 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]     rv = self.handle_user_exception(e)
+[Sun Aug 20 15:56:43.558806 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 15:56:43.558811 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]     rv = self.dispatch_request()
+[Sun Aug 20 15:56:43.558827 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 15:56:43.558832 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 15:56:43.558836 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]   File "/var/www/from-england-to-istanbul/main.py", line 88, in index
+[Sun Aug 20 15:56:43.558841 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]     sponsorship_messages = read()
+[Sun Aug 20 15:56:43.558845 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]   File "/var/www/from-england-to-istanbul/main.py", line 23, in read
+[Sun Aug 20 15:56:43.558850 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354]     with open('sponsorship.csv') as csv_file:
+[Sun Aug 20 15:56:43.558854 2023] [wsgi:error] [pid 22198:tid 139984552044288] [client 109.150.36.106:54354] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:00:27.835750 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381] /
+[Sun Aug 20 16:00:27.836658 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:00:27.836677 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381] Traceback (most recent call last):
+[Sun Aug 20 16:00:27.836682 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:00:27.836687 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]     response = self.full_dispatch_request()
+[Sun Aug 20 16:00:27.836694 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:00:27.836710 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:00:27.836714 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:00:27.836719 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]     rv = self.dispatch_request()
+[Sun Aug 20 16:00:27.836735 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:00:27.836740 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:00:27.836744 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]   File "/var/www/from-england-to-istanbul/main.py", line 89, in index
+[Sun Aug 20 16:00:27.836748 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]     sponsorship_messages = read()
+[Sun Aug 20 16:00:27.836752 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]   File "/var/www/from-england-to-istanbul/main.py", line 24, in read
+[Sun Aug 20 16:00:27.836757 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381]     with open('sponsorship.csv') as csv_file:
+[Sun Aug 20 16:00:27.836761 2023] [wsgi:error] [pid 22197:tid 139984585615104] [client 109.150.36.106:54381] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:00:30.272570 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:00:30.272625 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382] Traceback (most recent call last):
+[Sun Aug 20 16:00:30.272630 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:00:30.272635 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]     response = self.full_dispatch_request()
+[Sun Aug 20 16:00:30.272640 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:00:30.272644 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:00:30.272649 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:00:30.272653 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]     rv = self.dispatch_request()
+[Sun Aug 20 16:00:30.272657 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:00:30.272662 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:00:30.272666 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]   File "/var/www/from-england-to-istanbul/main.py", line 88, in index
+[Sun Aug 20 16:00:30.272670 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]     def index():
+[Sun Aug 20 16:00:30.272675 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]   File "/var/www/from-england-to-istanbul/main.py", line 23, in read
+[Sun Aug 20 16:00:30.272679 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382]     print(os.getcwd())
+[Sun Aug 20 16:00:30.272683 2023] [wsgi:error] [pid 22198:tid 139984535258880] [client 109.150.36.106:54382] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:09:32.391976 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735] /
+[Sun Aug 20 16:09:32.394569 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:09:32.394599 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735] Traceback (most recent call last):
+[Sun Aug 20 16:09:32.394616 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:09:32.394621 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]     response = self.full_dispatch_request()
+[Sun Aug 20 16:09:32.394626 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:09:32.394630 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:09:32.394635 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:09:32.394639 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]     rv = self.dispatch_request()
+[Sun Aug 20 16:09:32.394643 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:09:32.394648 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:09:32.394652 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]   File "/var/www/from-england-to-istanbul/main.py", line 89, in index
+[Sun Aug 20 16:09:32.394656 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]     sponsorship_messages = read()
+[Sun Aug 20 16:09:32.394660 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]   File "/var/www/from-england-to-istanbul/main.py", line 24, in read
+[Sun Aug 20 16:09:32.394665 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735]     with open('sponsorship.csv') as csv_file:
+[Sun Aug 20 16:09:32.394669 2023] [wsgi:error] [pid 22197:tid 139984552044288] [client 109.150.36.106:54735] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:09:37.038103 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:09:37.038157 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734] Traceback (most recent call last):
+[Sun Aug 20 16:09:37.038162 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:09:37.038167 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]     response = self.full_dispatch_request()
+[Sun Aug 20 16:09:37.038171 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:09:37.038176 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:09:37.038180 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:09:37.038184 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]     rv = self.dispatch_request()
+[Sun Aug 20 16:09:37.038188 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:09:37.038193 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:09:37.038211 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]   File "/var/www/from-england-to-istanbul/main.py", line 88, in index
+[Sun Aug 20 16:09:37.038215 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]     def index():
+[Sun Aug 20 16:09:37.038219 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]   File "/var/www/from-england-to-istanbul/main.py", line 23, in read
+[Sun Aug 20 16:09:37.038223 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734]     print(os.getcwd())
+[Sun Aug 20 16:09:37.038228 2023] [wsgi:error] [pid 22198:tid 139984526866176] [client 109.150.36.106:54734] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:14:30.804003 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861] /
+[Sun Aug 20 16:14:30.804963 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:14:30.804980 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861] Traceback (most recent call last):
+[Sun Aug 20 16:14:30.804985 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:14:30.804991 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]     response = self.full_dispatch_request()
+[Sun Aug 20 16:14:30.804998 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:14:30.805002 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:14:30.805007 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:14:30.805011 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]     rv = self.dispatch_request()
+[Sun Aug 20 16:14:30.805015 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:14:30.805020 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:14:30.805024 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]   File "/var/www/from-england-to-istanbul/main.py", line 89, in index
+[Sun Aug 20 16:14:30.805029 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]     sponsorship_messages = read()
+[Sun Aug 20 16:14:30.805033 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]   File "/var/www/from-england-to-istanbul/main.py", line 24, in read
+[Sun Aug 20 16:14:30.805047 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861]     with open('sponsorship.csv') as csv_file:
+[Sun Aug 20 16:14:30.805051 2023] [wsgi:error] [pid 22324:tid 139935685109504] [client 109.150.36.106:54861] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:18:02.140453 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997] /
+[Sun Aug 20 16:18:02.141464 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:18:02.141484 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997] Traceback (most recent call last):
+[Sun Aug 20 16:18:02.141489 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:18:02.141507 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]     response = self.full_dispatch_request()
+[Sun Aug 20 16:18:02.141513 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:18:02.141518 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:18:02.141522 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:18:02.141527 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]     rv = self.dispatch_request()
+[Sun Aug 20 16:18:02.141531 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:18:02.141536 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:18:02.141540 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]   File "/var/www/from-england-to-istanbul/main.py", line 91, in index
+[Sun Aug 20 16:18:02.141545 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]     sponsorship_messages = read()
+[Sun Aug 20 16:18:02.141549 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]   File "/var/www/from-england-to-istanbul/main.py", line 26, in read
+[Sun Aug 20 16:18:02.141553 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997]     with open('sponsorship.csv') as csv_file:
+[Sun Aug 20 16:18:02.141558 2023] [wsgi:error] [pid 22417:tid 140368814069504] [client 109.150.36.106:54997] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:22:50.647200 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035] /
+[Sun Aug 20 16:22:50.648404 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:22:50.648422 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035] Traceback (most recent call last):
+[Sun Aug 20 16:22:50.648427 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:22:50.648432 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]     response = self.full_dispatch_request()
+[Sun Aug 20 16:22:50.648437 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:22:50.648441 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:22:50.648446 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:22:50.648450 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]     rv = self.dispatch_request()
+[Sun Aug 20 16:22:50.648454 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:22:50.648459 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:22:50.648474 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]   File "/var/www/from-england-to-istanbul/main.py", line 91, in index
+[Sun Aug 20 16:22:50.648478 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]     @app.route('/')
+[Sun Aug 20 16:22:50.648482 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]   File "/var/www/from-england-to-istanbul/main.py", line 26, in read
+[Sun Aug 20 16:22:50.648487 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035]     print(pwd)
+[Sun Aug 20 16:22:50.648491 2023] [wsgi:error] [pid 22418:tid 140368839247616] [client 109.150.36.106:55035] FileNotFoundError: [Errno 2] No such file or directory: 'sponsorship.csv'
+[Sun Aug 20 16:23:40.398353 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057] mod_wsgi (pid=22498): Failed to exec Python script file '/var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi'.
+[Sun Aug 20 16:23:40.398424 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057] mod_wsgi (pid=22498): Exception occurred processing WSGI script '/var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi'.
+[Sun Aug 20 16:23:40.398631 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057] Traceback (most recent call last):
+[Sun Aug 20 16:23:40.398659 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057]   File "/var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi", line 12, in <module>
+[Sun Aug 20 16:23:40.398665 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057]     from main import app as application
+[Sun Aug 20 16:23:40.398678 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057]   File "/var/www/from-england-to-istanbul/main.py", line 27
+[Sun Aug 20 16:23:40.398688 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057]     assert False pwd
+[Sun Aug 20 16:23:40.398705 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057]                  ^
+[Sun Aug 20 16:23:40.398714 2023] [wsgi:error] [pid 22498:tid 140275091494656] [client 109.150.36.106:55057] SyntaxError: invalid syntax
+[Sun Aug 20 16:23:40.628124 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058] mod_wsgi (pid=22499): Failed to exec Python script file '/var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi'., referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628188 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058] mod_wsgi (pid=22499): Exception occurred processing WSGI script '/var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi'., referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628368 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058] Traceback (most recent call last):, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628393 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058]   File "/var/www/from-england-to-istanbul/from-england-to-istanbul.wsgi", line 12, in <module>, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628400 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058]     from main import app as application, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628413 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058]   File "/var/www/from-england-to-istanbul/main.py", line 27, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628422 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058]     assert False pwd, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628439 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058]                  ^, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:23:40.628461 2023] [wsgi:error] [pid 22499:tid 140275203004160] [client 109.150.36.106:55058] SyntaxError: invalid syntax, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 16:25:41.131889 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017] /
+[Sun Aug 20 16:25:41.132751 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:25:41.132768 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017] Traceback (most recent call last):
+[Sun Aug 20 16:25:41.132773 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:25:41.132778 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]     response = self.full_dispatch_request()
+[Sun Aug 20 16:25:41.132783 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:25:41.132787 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:25:41.132791 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:25:41.132796 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]     rv = self.dispatch_request()
+[Sun Aug 20 16:25:41.132800 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:25:41.132805 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:25:41.132809 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]   File "/var/www/from-england-to-istanbul/main.py", line 93, in index
+[Sun Aug 20 16:25:41.132813 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]     sponsorship_messages = read()
+[Sun Aug 20 16:25:41.132817 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]   File "/var/www/from-england-to-istanbul/main.py", line 27, in read
+[Sun Aug 20 16:25:41.132822 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017]     assert False, pwd
+[Sun Aug 20 16:25:41.132826 2023] [wsgi:error] [pid 22641:tid 140291935819520] [client 109.150.36.106:59017] AssertionError: /
+[Sun Aug 20 16:29:20.675076 2023] [wsgi:error] [pid 22716:tid 139807535646464] [client 109.150.36.106:59125] /
+[Sun Aug 20 16:30:52.636288 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140] /
+[Sun Aug 20 16:30:52.649969 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:30:52.650000 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140] Traceback (most recent call last):
+[Sun Aug 20 16:30:52.650005 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:30:52.650011 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     response = self.full_dispatch_request()
+[Sun Aug 20 16:30:52.650017 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:30:52.650022 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:30:52.650041 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:30:52.650045 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     rv = self.dispatch_request()
+[Sun Aug 20 16:30:52.650050 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:30:52.650054 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:30:52.650059 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/var/www/from-england-to-istanbul/main.py", line 93, in index
+[Sun Aug 20 16:30:52.650063 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     return render_template('index.html', sponsorship_messages=sponsorship_messages)
+[Sun Aug 20 16:30:52.650067 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 151, in render_template
+[Sun Aug 20 16:30:52.650072 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     return _render(app, template, context)
+[Sun Aug 20 16:30:52.650076 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 132, in _render
+[Sun Aug 20 16:30:52.650081 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     rv = template.render(context)
+[Sun Aug 20 16:30:52.650085 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+[Sun Aug 20 16:30:52.650089 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     self.environment.handle_exception()
+[Sun Aug 20 16:30:52.650093 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+[Sun Aug 20 16:30:52.650098 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     raise rewrite_traceback_stack(source=source)
+[Sun Aug 20 16:30:52.650102 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/var/www/from-england-to-istanbul/templates/index.html", line 1, in top-level template code
+[Sun Aug 20 16:30:52.650106 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     {% extends 'templates/base.html' %}
+[Sun Aug 20 16:30:52.650110 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 64, in get_source
+[Sun Aug 20 16:30:52.650115 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     return self._get_source_fast(environment, template)
+[Sun Aug 20 16:30:52.650119 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 98, in _get_source_fast
+[Sun Aug 20 16:30:52.650124 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140]     raise TemplateNotFound(template)
+[Sun Aug 20 16:30:52.650128 2023] [wsgi:error] [pid 22715:tid 139807644190464] [client 109.150.36.106:59140] jinja2.exceptions.TemplateNotFound: templates/base.html
+[Sun Aug 20 16:32:55.047689 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145] /
+[Sun Aug 20 16:32:55.050676 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:32:55.050715 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145] Traceback (most recent call last):
+[Sun Aug 20 16:32:55.050720 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:32:55.050724 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     response = self.full_dispatch_request()
+[Sun Aug 20 16:32:55.050729 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:32:55.050733 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:32:55.050738 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:32:55.050742 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     rv = self.dispatch_request()
+[Sun Aug 20 16:32:55.050746 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:32:55.050751 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:32:55.050755 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/var/www/from-england-to-istanbul/main.py", line 93, in index
+[Sun Aug 20 16:32:55.050759 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     return render_template('index.html', sponsorship_messages=sponsorship_messages)
+[Sun Aug 20 16:32:55.050764 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 151, in render_template
+[Sun Aug 20 16:32:55.050768 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     return _render(app, template, context)
+[Sun Aug 20 16:32:55.050772 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 132, in _render
+[Sun Aug 20 16:32:55.050777 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     rv = template.render(context)
+[Sun Aug 20 16:32:55.050781 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+[Sun Aug 20 16:32:55.050785 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     self.environment.handle_exception()
+[Sun Aug 20 16:32:55.050790 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+[Sun Aug 20 16:32:55.050794 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     raise rewrite_traceback_stack(source=source)
+[Sun Aug 20 16:32:55.050798 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/var/www/from-england-to-istanbul/templates/index.html", line 1, in top-level template code
+[Sun Aug 20 16:32:55.050803 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     {% extends '/var/www/from-england-to-istanbul/templates/base.html' %}
+[Sun Aug 20 16:32:55.050807 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 64, in get_source
+[Sun Aug 20 16:32:55.050816 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     return self._get_source_fast(environment, template)
+[Sun Aug 20 16:32:55.050821 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 98, in _get_source_fast
+[Sun Aug 20 16:32:55.050825 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145]     raise TemplateNotFound(template)
+[Sun Aug 20 16:32:55.050829 2023] [wsgi:error] [pid 22715:tid 139807552431872] [client 109.150.36.106:59145] jinja2.exceptions.TemplateNotFound: templates/base.html
+[Sun Aug 20 16:33:22.120821 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157] /
+[Sun Aug 20 16:33:22.121854 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:33:22.121874 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157] Traceback (most recent call last):
+[Sun Aug 20 16:33:22.121879 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:33:22.121884 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     response = self.full_dispatch_request()
+[Sun Aug 20 16:33:22.121888 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:33:22.121893 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:33:22.121897 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:33:22.121902 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     rv = self.dispatch_request()
+[Sun Aug 20 16:33:22.121906 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:33:22.121910 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:33:22.121915 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/var/www/from-england-to-istanbul/main.py", line 93, in index
+[Sun Aug 20 16:33:22.121919 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     return render_template('index.html', sponsorship_messages=sponsorship_messages)
+[Sun Aug 20 16:33:22.121923 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 151, in render_template
+[Sun Aug 20 16:33:22.121928 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     return _render(app, template, context)
+[Sun Aug 20 16:33:22.121932 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 132, in _render
+[Sun Aug 20 16:33:22.121937 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     rv = template.render(context)
+[Sun Aug 20 16:33:22.121941 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+[Sun Aug 20 16:33:22.121945 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     self.environment.handle_exception()
+[Sun Aug 20 16:33:22.121960 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+[Sun Aug 20 16:33:22.121965 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     raise rewrite_traceback_stack(source=source)
+[Sun Aug 20 16:33:22.121969 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/var/www/from-england-to-istanbul/templates/index.html", line 1, in top-level template code
+[Sun Aug 20 16:33:22.121973 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     {% extends '/var/www/from-england-to-istanbul/templates/base.html' %}
+[Sun Aug 20 16:33:22.121978 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 64, in get_source
+[Sun Aug 20 16:33:22.121982 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     return self._get_source_fast(environment, template)
+[Sun Aug 20 16:33:22.121986 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 98, in _get_source_fast
+[Sun Aug 20 16:33:22.121991 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157]     raise TemplateNotFound(template)
+[Sun Aug 20 16:33:22.121995 2023] [wsgi:error] [pid 22715:tid 139807535646464] [client 109.150.36.106:59157] jinja2.exceptions.TemplateNotFound: templates/base.html
+[Sun Aug 20 16:33:44.820444 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161] /
+[Sun Aug 20 16:33:44.832710 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161] ERROR:main:Exception on / [GET]
+[Sun Aug 20 16:33:44.832744 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161] Traceback (most recent call last):
+[Sun Aug 20 16:33:44.832749 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app
+[Sun Aug 20 16:33:44.832755 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     response = self.full_dispatch_request()
+[Sun Aug 20 16:33:44.832760 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request
+[Sun Aug 20 16:33:44.832764 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     rv = self.handle_user_exception(e)
+[Sun Aug 20 16:33:44.832768 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request
+[Sun Aug 20 16:33:44.832773 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     rv = self.dispatch_request()
+[Sun Aug 20 16:33:44.832777 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request
+[Sun Aug 20 16:33:44.832782 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+[Sun Aug 20 16:33:44.832787 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/var/www/from-england-to-istanbul/main.py", line 93, in index
+[Sun Aug 20 16:33:44.832791 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     return render_template('index.html', sponsorship_messages=sponsorship_messages)
+[Sun Aug 20 16:33:44.832795 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 151, in render_template
+[Sun Aug 20 16:33:44.832818 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     return _render(app, template, context)
+[Sun Aug 20 16:33:44.832822 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 132, in _render
+[Sun Aug 20 16:33:44.832827 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     rv = template.render(context)
+[Sun Aug 20 16:33:44.832831 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+[Sun Aug 20 16:33:44.832835 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     self.environment.handle_exception()
+[Sun Aug 20 16:33:44.832839 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+[Sun Aug 20 16:33:44.832844 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     raise rewrite_traceback_stack(source=source)
+[Sun Aug 20 16:33:44.832848 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/var/www/from-england-to-istanbul/templates/index.html", line 1, in top-level template code
+[Sun Aug 20 16:33:44.832852 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     {% extends '/var/www/from-england-to-istanbul/templates/base.html' %}
+[Sun Aug 20 16:33:44.832857 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 64, in get_source
+[Sun Aug 20 16:33:44.832861 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     return self._get_source_fast(environment, template)
+[Sun Aug 20 16:33:44.832865 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/templating.py", line 98, in _get_source_fast
+[Sun Aug 20 16:33:44.832869 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161]     raise TemplateNotFound(template)
+[Sun Aug 20 16:33:44.832874 2023] [wsgi:error] [pid 22812:tid 139696143324928] [client 109.150.36.106:59161] jinja2.exceptions.TemplateNotFound: /var/www/from-england-to-istanbul/templates/base.html
+[Sun Aug 20 16:36:25.126429 2023] [wsgi:error] [pid 22811:tid 139696242075392] [client 109.150.36.106:59199] /
+[Sun Aug 20 16:37:18.316803 2023] [wsgi:error] [pid 22811:tid 139696143324928] [client 109.150.36.106:47731] /
+[Sun Aug 20 16:38:14.570887 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] Joe Bloggs, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.570942 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] GBP, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.570955 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] 123.56, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.570981 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572447 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] ERROR:main:Exception on /post_a_message [POST], referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572468 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] Traceback (most recent call last):, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572487 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572492 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]     response = self.full_dispatch_request(), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572497 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572502 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]     rv = self.handle_user_exception(e), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572506 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572511 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]     rv = self.dispatch_request(), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572515 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572519 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572524 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]   File "/var/www/from-england-to-istanbul/main.py", line 129, in post_a_message, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572529 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]     write_new_row(rows, new_row), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572533 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]   File "/var/www/from-england-to-istanbul/main.py", line 33, in write_new_row, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572537 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237]     with open('sponsorship.csv', mode='w') as csv_file:, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:38:14.572542 2023] [wsgi:error] [pid 22811:tid 139696092968704] [client 109.150.36.106:59237] PermissionError: [Errno 13] Permission denied: 'sponsorship.csv', referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.003959 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] Joe Bloggs, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.004015 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] GBP, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.004028 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] 123.56, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.004050 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005278 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] ERROR:main:Exception on /post_a_message [POST], referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005316 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] Traceback (most recent call last):, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005322 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005326 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]     response = self.full_dispatch_request(), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005332 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005336 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]     rv = self.handle_user_exception(e), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005340 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005345 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]     rv = self.dispatch_request(), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005349 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005354 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005359 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]   File "/var/www/from-england-to-istanbul/main.py", line 129, in post_a_message, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005363 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]     write_new_row(rows, new_row), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005368 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]   File "/var/www/from-england-to-istanbul/main.py", line 33, in write_new_row, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005372 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382]     with open('sponsorship.csv', mode='w') as csv_file:, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:03.005376 2023] [wsgi:error] [pid 22894:tid 139936367879936] [client 109.150.36.106:59382] PermissionError: [Errno 13] Permission denied: 'sponsorship.csv', referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:07.831897 2023] [wsgi:error] [pid 22893:tid 139936401450752] [client 109.150.36.106:59383] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735142 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] Joe Bloggs, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735203 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] GBP, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735216 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] 123.56, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735256 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735931 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] ERROR:main:Exception on /post_a_message [POST], referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735950 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] Traceback (most recent call last):, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735954 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735959 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]     response = self.full_dispatch_request(), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735964 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735969 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]     rv = self.handle_user_exception(e), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735984 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735989 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]     rv = self.dispatch_request(), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735993 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.735998 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.736003 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]   File "/var/www/from-england-to-istanbul/main.py", line 129, in post_a_message, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.736007 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]     write_new_row(rows, new_row), referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.736011 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]   File "/var/www/from-england-to-istanbul/main.py", line 33, in write_new_row, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.736016 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387]     with open('sponsorship.csv', mode='w') as csv_file:, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:41:16.736020 2023] [wsgi:error] [pid 22894:tid 139936351094528] [client 109.150.36.106:59387] PermissionError: [Errno 13] Permission denied: 'sponsorship.csv', referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:43:21.627688 2023] [wsgi:error] [pid 22979:tid 140562868008704] [client 109.150.36.106:59427] Joe Bloggs, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:43:21.627775 2023] [wsgi:error] [pid 22979:tid 140562868008704] [client 109.150.36.106:59427] GBP, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:43:21.627788 2023] [wsgi:error] [pid 22979:tid 140562868008704] [client 109.150.36.106:59427] 123.56, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:43:21.627808 2023] [wsgi:error] [pid 22979:tid 140562868008704] [client 109.150.36.106:59427] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 16:43:21.739583 2023] [wsgi:error] [pid 22979:tid 140562859616000] [client 109.150.36.106:59427] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 17:49:20.611193 2023] [wsgi:error] [pid 22979:tid 140562703300352] [client 109.150.36.106:40874] /
+[Sun Aug 20 17:49:50.311295 2023] [wsgi:error] [pid 22980:tid 140562652944128] [client 109.150.36.106:36934] /
+[Sun Aug 20 17:54:50.164454 2023] [wsgi:error] [pid 22979:tid 140562669729536] [client 154.209.125.125:50869] /
+[Sun Aug 20 17:58:55.642575 2023] [wsgi:error] [pid 22980:tid 140562627766016] [client 109.150.36.106:39018] /
+[Sun Aug 20 18:11:37.621904 2023] [wsgi:error] [pid 22979:tid 140562644551424] [client 109.150.36.106:33592] /
+[Sun Aug 20 18:12:07.351000 2023] [wsgi:error] [pid 22980:tid 140562834437888] [client 109.150.36.106:38960] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 18:18:27.268701 2023] [wsgi:error] [pid 22979:tid 140562842830592] [client 109.150.36.106:44500] /
+[Sun Aug 20 18:20:02.261511 2023] [wsgi:error] [pid 22980:tid 140562652944128] [client 46.208.79.223:37764] /
+[Sun Aug 20 18:23:39.843489 2023] [wsgi:error] [pid 24564:tid 140606080804608] [client 185.36.81.33:36616] /
+[Sun Aug 20 19:04:12.570641 2023] [wsgi:error] [pid 25500:tid 140370713233152] [client 141.98.11.60:37174] /
+[Sun Aug 20 19:11:08.840868 2023] [wsgi:error] [pid 25819:tid 140305730029312] [client 107.150.105.239:56994] /
+[Sun Aug 20 19:19:45.522301 2023] [wsgi:error] [pid 26102:tid 140380686317312] [client 109.150.36.106:41932] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 19:42:23.815701 2023] [wsgi:error] [pid 26918:tid 140364583847680] [client 109.150.36.106:43224] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 19:42:23.815812 2023] [wsgi:error] [pid 26918:tid 140364592240384] [client 109.150.36.106:43236] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 19:43:16.779093 2023] [wsgi:error] [pid 26918:tid 140364472108800] [client 109.150.36.106:33562] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 20:16:05.030594 2023] [wsgi:error] [pid 26918:tid 140364379789056] [client 198.74.56.46:46589] /
+[Sun Aug 20 20:16:20.109400 2023] [wsgi:error] [pid 26917:tid 140364438537984] [client 192.155.90.220:56456] /
+[Sun Aug 20 20:46:51.243620 2023] [wsgi:error] [pid 26918:tid 140364463716096] [client 109.150.36.106:39604] /, referer: http://www.from-england-to-istanbul.co.uk/route
+[Sun Aug 20 20:50:32.707528 2023] [wsgi:error] [pid 27526:tid 139854503458560] [client 109.150.36.106:34534] /
+[Sun Aug 20 20:54:59.085925 2023] [wsgi:error] [pid 27525:tid 139854486673152] [client 31.7.60.114:52322] /
+[Sun Aug 20 20:56:53.955756 2023] [wsgi:error] [pid 27526:tid 139854511851264] [client 109.150.36.106:36236] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 21:00:33.699543 2023] [wsgi:error] [pid 27525:tid 139854520243968] [client 109.150.36.106:37056] /
+[Sun Aug 20 21:00:41.525842 2023] [wsgi:error] [pid 27812:tid 139837568329472] [client 109.150.36.106:46828] /
+[Sun Aug 20 21:21:55.171065 2023] [wsgi:error] [pid 27813:tid 139837491377920] [client 109.150.36.106:56159] /
+[Sun Aug 20 21:26:18.723327 2023] [wsgi:error] [pid 27813:tid 139837441021696] [client 109.150.36.106:56250] Jerry from IT, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:26:18.724539 2023] [wsgi:error] [pid 27813:tid 139837441021696] [client 109.150.36.106:56250] GBP, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:26:18.724582 2023] [wsgi:error] [pid 27813:tid 139837441021696] [client 109.150.36.106:56250] 1, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:26:18.724617 2023] [wsgi:error] [pid 27813:tid 139837441021696] [client 109.150.36.106:56250] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:26:18.839332 2023] [wsgi:error] [pid 27813:tid 139837432628992] [client 109.150.36.106:56250] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:29:10.969014 2023] [wsgi:error] [pid 27813:tid 139837407450880] [client 109.150.36.106:56271] /, referer: http://www.from-england-to-istanbul.co.uk/route
+[Sun Aug 20 21:37:03.960373 2023] [wsgi:error] [pid 27812:tid 139837441021696] [client 109.150.36.106:48801] /, referer: http://www.from-england-to-istanbul.co.uk/route
+[Sun Aug 20 21:38:00.315807 2023] [wsgi:error] [pid 27812:tid 139837424236288] [client 109.150.36.106:48821] , referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:00.315904 2023] [wsgi:error] [pid 27812:tid 139837424236288] [client 109.150.36.106:48821] EUR, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:00.315920 2023] [wsgi:error] [pid 27812:tid 139837424236288] [client 109.150.36.106:48821] 565656, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:00.315948 2023] [wsgi:error] [pid 27812:tid 139837424236288] [client 109.150.36.106:48821] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:10.774305 2023] [wsgi:error] [pid 27813:tid 139837610292992] [client 109.150.36.106:48831] , referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:10.774408 2023] [wsgi:error] [pid 27813:tid 139837610292992] [client 109.150.36.106:48831] EUR, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:10.774424 2023] [wsgi:error] [pid 27813:tid 139837610292992] [client 109.150.36.106:48831] 565656, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:10.774453 2023] [wsgi:error] [pid 27813:tid 139837610292992] [client 109.150.36.106:48831] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:38:10.930026 2023] [wsgi:error] [pid 27813:tid 139837568329472] [client 109.150.36.106:48831] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:40:00.362495 2023] [wsgi:error] [pid 27812:tid 139837593507584] [client 109.150.36.106:48845] Test, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:40:00.364313 2023] [wsgi:error] [pid 27812:tid 139837593507584] [client 109.150.36.106:48845] USD, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:40:00.364404 2023] [wsgi:error] [pid 27812:tid 139837593507584] [client 109.150.36.106:48845] 567, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:40:00.364484 2023] [wsgi:error] [pid 27812:tid 139837593507584] [client 109.150.36.106:48845] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:40:00.505726 2023] [wsgi:error] [pid 27812:tid 139837390665472] [client 109.150.36.106:48845] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Sun Aug 20 21:42:17.907440 2023] [wsgi:error] [pid 27812:tid 139837365487360] [client 109.150.36.106:48859] /, referer: http://www.from-england-to-istanbul.co.uk/causes
+[Sun Aug 20 21:42:18.271073 2023] [wsgi:error] [pid 27812:tid 139837357094656] [client 109.150.36.106:48859] /, referer: http://www.from-england-to-istanbul.co.uk/
+[Sun Aug 20 21:45:55.881000 2023] [wsgi:error] [pid 27813:tid 139837415843584] [client 109.150.36.106:48959] /
+[Sun Aug 20 22:37:40.389580 2023] [wsgi:error] [pid 27813:tid 139837373880064] [client 109.150.36.106:56527] /
+[Sun Aug 20 22:55:33.359768 2023] [wsgi:error] [pid 27813:tid 139837357094656] [client 109.150.36.106:56553] /
+[Mon Aug 21 00:47:34.394283 2023] [wsgi:error] [pid 27812:tid 139837576722176] [client 205.210.31.128:50077] /
+[Mon Aug 21 01:10:13.904501 2023] [wsgi:error] [pid 27813:tid 139837474592512] [client 141.98.11.60:45400] /
+[Mon Aug 21 01:27:58.132207 2023] [wsgi:error] [pid 27812:tid 139837466199808] [client 185.180.143.47:35288] /
+[Mon Aug 21 01:40:03.919508 2023] [wsgi:error] [pid 27812:tid 139837424236288] [client 110.235.234.238:63781] /
+[Mon Aug 21 02:05:24.146017 2023] [wsgi:error] [pid 27812:tid 139837399058176] [client 167.94.138.125:50274] /
+[Mon Aug 21 02:06:55.176707 2023] [wsgi:error] [pid 27812:tid 139837390665472] [client 205.210.31.16:59764] /
+[Mon Aug 21 02:14:27.652713 2023] [wsgi:error] [pid 27812:tid 139837373880064] [client 198.235.24.52:54021] /
+[Mon Aug 21 02:28:25.901457 2023] [wsgi:error] [pid 27813:tid 139837585114880] [client 154.209.125.125:16921] /
+[Mon Aug 21 08:54:21.423851 2023] [wsgi:error] [pid 567:tid 139892365768448] [client 179.43.191.194:43376] /
+[Mon Aug 21 09:49:19.855667 2023] [wsgi:error] [pid 564:tid 140095573706496] [client 31.7.60.114:49364] /
+[Mon Aug 21 10:11:03.584754 2023] [wsgi:error] [pid 564:tid 140095540135680] [client 193.35.18.25:44302] /
+[Mon Aug 21 10:16:06.609735 2023] [wsgi:error] [pid 564:tid 140095424280320] [client 65.49.20.67:52022] /
+[Mon Aug 21 13:03:16.895643 2023] [wsgi:error] [pid 564:tid 140095357138688] [client 185.224.128.142:45924] /
+[Mon Aug 21 13:25:01.822612 2023] [wsgi:error] [pid 520:tid 140476920641280] [client 109.150.36.106:61768] /
+[Mon Aug 21 13:40:09.729781 2023] [wsgi:error] [pid 520:tid 140476812347136] [client 109.150.36.106:45007] /
+[Mon Aug 21 13:40:14.171483 2023] [wsgi:error] [pid 520:tid 140476820739840] [client 109.150.36.106:45007] /
+[Mon Aug 21 13:40:39.674686 2023] [wsgi:error] [pid 520:tid 140476778776320] [client 109.150.36.106:45019] smge, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:40:39.674777 2023] [wsgi:error] [pid 520:tid 140476778776320] [client 109.150.36.106:45019] GBP, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:40:39.674792 2023] [wsgi:error] [pid 520:tid 140476778776320] [client 109.150.36.106:45019] Jsjsj, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:40:39.674816 2023] [wsgi:error] [pid 520:tid 140476778776320] [client 109.150.36.106:45019] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:40:39.812637 2023] [wsgi:error] [pid 520:tid 140476770383616] [client 109.150.36.106:45019] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:44:10.385944 2023] [wsgi:error] [pid 520:tid 140476753598208] [client 109.150.36.106:45083] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:44:23.816531 2023] [wsgi:error] [pid 520:tid 140476736812800] [client 109.150.36.106:62735] /
+[Mon Aug 21 13:49:27.349450 2023] [wsgi:error] [pid 520:tid 140476703241984] [client 206.189.247.132:60128] /, referer: http://from-england-to-istanbul.co.uk/
+[Mon Aug 21 13:49:27.843576 2023] [wsgi:error] [pid 519:tid 140476803954432] [client 172.241.131.133:47169] /, referer: http://from-england-to-istanbul.co.uk/
+[Mon Aug 21 13:49:28.507367 2023] [wsgi:error] [pid 520:tid 140476686456576] [client 185.156.172.172:33247] /, referer: http://from-england-to-istanbul.co.uk/
+[Mon Aug 21 13:49:30.491180 2023] [wsgi:error] [pid 519:tid 140476787169024] [client 164.90.241.135:46946] /, referer: http://from-england-to-istanbul.co.uk/
+[Mon Aug 21 13:50:14.044748 2023] [wsgi:error] [pid 519:tid 140476770383616] [client 185.156.172.172:47383] /
+[Mon Aug 21 13:57:47.150531 2023] [wsgi:error] [pid 520:tid 140476652885760] [client 185.156.172.172:54645] /
+[Mon Aug 21 13:58:00.835426 2023] [wsgi:error] [pid 520:tid 140476837525248] [client 185.156.172.172:54915] /
+[Mon Aug 21 13:58:08.653440 2023] [wsgi:error] [pid 520:tid 140476803954432] [client 185.156.172.172:49261] Kevin Koning, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:58:08.653535 2023] [wsgi:error] [pid 520:tid 140476803954432] [client 185.156.172.172:49261] USD, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:58:08.653550 2023] [wsgi:error] [pid 520:tid 140476803954432] [client 185.156.172.172:49261] Handmade, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:58:08.653580 2023] [wsgi:error] [pid 520:tid 140476803954432] [client 185.156.172.172:49261] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 13:58:11.000985 2023] [wsgi:error] [pid 520:tid 140476820739840] [client 185.156.172.172:49261] /, referer: http://www.from-england-to-istanbul.co.uk/post_a_message
+[Mon Aug 21 14:04:20.807781 2023] [wsgi:error] [pid 520:tid 140476728420096] [client 83.97.73.87:49896] /
+[Mon Aug 21 14:39:13.590740 2023] [wsgi:error] [pid 4392:tid 140080238495488] [client 109.150.36.106:38338] /
+[Mon Aug 21 14:39:15.771073 2023] [wsgi:error] [pid 4392:tid 140080255280896] [client 109.150.36.106:38338] /
+[Mon Aug 21 14:40:26.688722 2023] [wsgi:error] [pid 4393:tid 140080131852032] [client 109.150.36.106:52711] /
+[Mon Aug 21 14:41:14.620107 2023] [wsgi:error] [pid 4392:tid 140080064710400] [client 109.150.36.106:52847] /
+[Mon Aug 21 14:47:31.367473 2023] [wsgi:error] [pid 4393:tid 140080081495808] [client 109.150.36.106:52910] /
+[Mon Aug 21 14:53:22.318851 2023] [wsgi:error] [pid 4393:tid 140080047924992] [client 83.97.73.87:58572] /, referer: http://34.27.73.138:80/?XDEBUG_SESSION_START=phpstorm
+[Mon Aug 21 15:00:08.506902 2023] [wsgi:error] [pid 4393:tid 140080014354176] [client 109.150.36.106:59018] /
+[Mon Aug 21 15:00:40.255270 2023] [wsgi:error] [pid 4392:tid 140080014354176] [client 109.150.36.106:38430] /
+[Mon Aug 21 15:01:28.513419 2023] [wsgi:error] [pid 4393:tid 140080288851712] [client 172.105.128.13:44356] /
+[Mon Aug 21 16:26:11.876411 2023] [wsgi:error] [pid 4393:tid 140080081495808] [client 109.150.36.106:60070] /
+[Mon Aug 21 16:27:14.351933 2023] [wsgi:error] [pid 4392:tid 140080131852032] [client 109.150.36.106:59144] /
+[Mon Aug 21 16:27:14.352020 2023] [wsgi:error] [pid 4392:tid 140080123459328] [client 109.150.36.106:60109] /
+[Mon Aug 21 16:37:28.011400 2023] [wsgi:error] [pid 4392:tid 140080089888512] [client 109.150.36.106:59153] /
+[Mon Aug 21 17:14:07.279924 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872] /, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281844 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872] ERROR:main:Exception on / [GET], referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281860 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872] Traceback (most recent call last):, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281865 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 2190, in wsgi_app, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281870 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]     response = self.full_dispatch_request(), referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281875 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1486, in full_dispatch_request, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281880 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]     rv = self.handle_user_exception(e), referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281884 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1484, in full_dispatch_request, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281888 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]     rv = self.dispatch_request(), referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281904 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]   File "/home/hanne/miniconda3/lib/python3.11/site-packages/flask/app.py", line 1469, in dispatch_request, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281908 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args), referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281913 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]   File "/var/www/from-england-to-istanbul/main.py", line 96, in index, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281917 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]     sponsorship_messages = read(), referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281922 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]   File "/var/www/from-england-to-istanbul/main.py", line 31, in read, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281926 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872]     with open() as csv_file:, referer: http://34.27.73.138:80/
+[Mon Aug 21 17:14:07.281940 2023] [wsgi:error] [pid 582:tid 139782773774080] [client 83.97.73.87:54872] TypeError: open() missing required argument 'file' (pos 1), referer: http://34.27.73.138:80/
