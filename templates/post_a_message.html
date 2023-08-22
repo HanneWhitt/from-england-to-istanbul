@@ -1,35 +1,45 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<br>
+<br>
 <h1>{% block title %} Leave a message! {% endblock %}</h1>
+<br>
+<p>Thank you very much for sponsoring me, both from me, and on behalf of the people you have helped.</p>
+
+<p>At the moment, Giving What We Can are not able to host sponsorship messages, so please post one using form below! It will mean a great deal to me to read messages from friends and supporters as I go, and it creates a buzz that encourages others to help too. While I would like to be able to thank you, please feel free to post anonymously, or just let me know by email at <a href = "mailto: hannes.whittingham@gmail.com">hannes.whittingham@gmail.com</a>.</p>
+
+<br>
+
 <form method="post">
     <div class="form-group">
-        <label for="your_name">Your Name</label>
+        <label for="your_name"><b>Your Name</b></label>
         <input type="text" name="your_name"
                placeholder="Anonymous" class="form-control"
-               value="{{ request.form['sponsorship_currency'] }}"></input>
+               value="{{ request.form['your_name'] }}"></input>
     </div>
     <div class="form-group">
-        <label for="title">Sponsorship Currency</label>
+        <label for="title"><b>Sponsorship Currency</b></label>
         <select class="form-select" id="sponsorship_currency" name="sponsorship_currency">
-            <option value="GBP"> £ </option>
-            <option value="USD"> $ </option>
-            <option value="EUR"> € </option>
+            <option value="£"> £ </option>
+            <option value="$"> $ </option>
+            <option value="€"> € </option>
         </select>
     </div>
     <div class="form-group">
-        <label for="sponsorship_amount">Sponsorship Amount*</label>
+        <label for="sponsorship_amount"><b>Sponsorship Amount*</b></label>
+        <br>
         <input type="text" name="sponsorship_amount"
-               placeholder="0" class="form-control"
+               placeholder="0.00" class="form-control"
                value="{{ request.form['sponsorship_amount'] }}"></input>
     </div>
     <div class="form-group">
-        <label for="your_message">Message</label>
+        <label for="your_message"><b>Message</b></label>
         <textarea name="your_message" placeholder="Write me a message!"
                   class="form-control">{{ request.form['your_message'] }}</textarea>
     </div>
     <div class="form-group">
-        <label for="your_email">Your email (just so I can send a thank you! Not shown on site)</label>
+        <label for="your_email"><b>Your email</b> <i>(just so I can send a thank you; not shown on site)</i></label>
         <textarea name="your_email" placeholder=""
                   class="form-control">{{ request.form['your_email'] }}</textarea>
     </div>

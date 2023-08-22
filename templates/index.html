@@ -3,17 +3,26 @@
 {% block content %}
     <br>
     <br>
-    <h1>{% block title %}My name is Hannes, and I'm taking my bike on a solo journey of 5,000km from my hometown of Cambridge, UK, to the ancient city of Constantinople in Turkey.</b> {% endblock %}</h1>
+    <h1>{% block title %}My name is Hannes, and I'm taking my bike on a solo journey of 5,000km from my hometown of Cambridge, UK, to Istanbul.</b> {% endblock %}</h1>
     <br>
-    <p>Beginning on 23rd August 2023, it will be a long, arduous, exhausting, painful, and wonderful journey of one man, one bike, and one overcomplicated camping hammock. I am doing it to try to raise $12,000 to support three causes: .</p>
-    <p>Each cause is quite different, but they have one thing in common: they are chosen so as to do as much good as possible with the money, on the basis of strong evidence collected by Giving What We Can and other independent evaluators. No wishful thinking, corruption or administrative inefficiencies here; only real people and real help.</p>
+    <p>Beginning on 23rd August 2023, it will be a long, arduous, exhausting, painful, and wonderful journey of one man, one bike, and one overcomplicated camping hammock. I am doing it <b>to try to raise $12,000</b> to support three charities: <a href="https://www.givingwhatwecan.org/charities/helen-keller-international">
+        Helen Keller International's vitamin A supplementation program</a>, the 
+    <a href="https://www.founderspledge.com/funds/climate-change-fund">Founders Pledge Climate Change Fund</a>, and 
+    <a href="https://www.givingwhatwecan.org/charities/strongminds">StrongMinds</a>.</p>
+
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('route')}}';">The journey</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The causes</button>
+    <br>
+    <br>
+    <br>
+    <p>Each cause is quite different, but they have one thing in common: they are chosen so as to do as much good as possible with the money, on the basis of strong evidence collected by <a href="https://www.givingwhatwecan.org/">Giving What We Can</a> and <a href="https://www.givewell.org/">other independent evaluators</a>. No wishful thinking, corruption or administrative inefficiencies here; only real people and real help.</p>
     
     <p>If you make a donation, <b>be sure to let me know and post a message</b> via <a href="{{ url_for('post_a_message') }}"> this form</a>!
     It means a huge amount to me personally to have your support on my long journey, and creates a buzz that encourages others to help too. If you wish, you can choose to remain anonymous and just post a message, or even just register your donation.
     <p>If you have any questions, or you'd prefer to let me know by email, just send me a message at <a href = "mailto: hannes.whittingham@gmail.com">hannes.whittingham@gmail.com</a>!</p>
-    <br>
     <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
-    <button type="button" class="btn btn-primary" onclick="location.href='http://www.from-england-to-istanbul.co.uk/post_a_message'">Post a message!</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>
+    <br>
     <br>
     <br>
     <h3> Supporters </h3>
@@ -22,10 +31,10 @@
     {% for msg in sponsorship_messages %}
         <!--<a href="{{ url_for('msg', msg_id=msg['id']) }}"> -->
         <div style="float: right">
-            <span class="badge badge-primary">{{ msg['created'] }}</span>
+            <span class="badge badge-primary">{{ msg['date'] ~ " " ~ msg['time'] }}</span>
         </div>
         <div style="float: left">
-            <h5>{{ msg['your_name'] }}</h5><b>{{('$' if msg['sponsorship_currency'] == 'USD' else ('£' if msg['sponsorship_currency'] == 'GBP' else '€')) ~ (msg['sponsorship_amount']) }}</b>
+            <h5>{{ msg['your_name'] }}</h5><b>{{msg['sponsorship_currency'] ~ (msg['sponsorship_amount']) }}</b>
             <br>
             {{ 'No message' if msg['your_message'] in ['-', '', None] else msg['your_message']}}
             <br>

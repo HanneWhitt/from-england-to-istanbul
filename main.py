@@ -3,42 +3,34 @@ import sqlite3
 from flask import Flask, render_template, request, url_for, flash, redirect
 from werkzeug.exceptions import abort
 import csv
-import sys
-import datetime
+from datetime import datetime
 import pytz
 
 
-def store_message(row):
-    entity = datastore.Entity(key=datastore_client.key("message"))
-    entity.update(row)
-    datastore_client.put(entity)
+hostname = os.uname()[1]
 
+if hostname == 'website-vm':
+    csv_file_path = '/var/www/from-england-to-istanbul/sponsorship.csv'
+else:
+    csv_file_path = 'sponsorship_test_file.csv'
 
-def fetch_messages(limit=None):
-    query = datastore_client.query(kind="message")
-    query.order = ["id"]
-    times = query.fetch(limit=limit)
-    return times
-
-
-csv_file_path = '/var/www/from-england-to-istanbul/sponsorship.csv'
 fieldnames = ['id', 'date', 'time', 'your_name','sponsorship_currency','sponsorship_amount','your_message','your_email']    
 
 
 def read():
     pwd = os.getcwd()
     print(pwd)
-    with open() as csv_file:
+    with open(csv_file_path) as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter=',')
         return [d for d in csv_reader]
 
 
 def write_new_row(old_rows, new_dict):
-    with open('/var/www/from-england-to-istanbul/sponsorship.csv', mode='w') as csv_file:
+    with open(csv_file_path, mode='w') as csv_file:
         csv_writer = csv.DictWriter(csv_file, fieldnames, delimiter=',')
-        writer.writeheader()
+        csv_writer.writeheader()
         for d in old_rows:
-            csv_writer.writerow(d.values())
+            csv_writer.writerow(d)
         csv_writer.writerow(new_dict)
 
 
@@ -87,14 +79,30 @@ def get_msg(msg_id):
         abort(404)
     return msg
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'MySitesSecurityIsQuestionable'
 
+gbp_in_usd = 1.2757
+eur_in_usd = 1.090272
 
 @app.route('/')
 def index():
     sponsorship_messages = read()
-    return render_template('index.html', sponsorship_messages=sponsorship_messages)
+    raised = 0.0
+    for msg in sponsorship_messages:
+        try:
+            amount = float(msg['sponsorship_amount'])
+            currency = msg['sponsorship_currency']
+            if currency == '$':
+                raised += amount
+            elif currency == '£':
+                raised += gbp_in_usd*amount
+            elif currency == '€':
+                raised += eur_in_usd*amount
+        except:
+            pass
+    return render_template('index.html', sponsorship_messages=sponsorship_messages, raised=raised)
 
 @app.route('/route')
 def route():
@@ -112,31 +120,68 @@ def msg(msg_id):
 @app.route('/post_a_message', methods=('GET', 'POST'))
 def post_a_message():
     if request.method == 'POST':
-			
-        your_name = request.form['your_name']
+		
+        new_post = request.form.to_dict()
 
-        print(your_name)
-        sponsorship_currency = request.form['sponsorship_currency']
-        print(sponsorship_currency)
-        sponsorship_amount = request.form['sponsorship_amount']
-        print(sponsorship_amount)
+        check_pass = True
 
-        your_message = request.form['your_message']
-        your_email = request.form['your_email']
+        if len(new_post['your_name']) > 70:
+            flash('Please limit name field to 70 characters.')
+            check_pass = False
 
-        if not sponsorship_amount:
-            flash('Sponsorship amount is required!')
+        if not new_post['sponsorship_amount']:
+            flash('Please enter a sponsorship currency and amount.')
+            check_pass = False
+
         else:
-            
-            dt = datetime.now(pytz.timezone('Europe/London'))
-            date = dt.strftime('%d %b %Y')
-            time = dt.strftime('%H:%M')
+            try:
+                sa = new_post['sponsorship_amount']
+                if '.' in sa:
+                    dp = len(sa[sa.rfind('.')+1:])
+                    if dp != 2:
+                        print('dp', dp)
+                        assert False
+                sa = str(float(sa))
+                if float(sa) > 10000 or float(sa) < 0:
+                    assert False
+            except:
+                flash('Sponsorship amount not a valid number.')
+                check_pass = False
+    
+        if len(new_post['your_name']) > 2000:
+            flash('Sorry, my site only fits messages up to 2000 characters - but I would love to hear more from you! Please just copy and paste your text into an email to hannes.whittingham@gmail.com.')
+            check_pass = False
 
-            rows = read()
-            new_id = len(rows)
-            new_row = [new_id, date, time, your_name, sponsorship_currency, sponsorship_amount, your_message, your_email]
-            write_new_row(rows, new_row)
-        return redirect(url_for('index'))
+        if len(new_post['your_email']) > 100:
+            flash('Please limit email field to 100 characters.')
+            check_pass = False
+
+
+        if check_pass:
+            
+            if not new_post['your_name']:
+                new_post['your_name'] = 'Anonymous'
+
+            dt = datetime.now(pytz.timezone('Europe/London'))
+            new_post['date'] = dt.strftime('%d %b %Y')
+            new_post['time'] = dt.strftime('%H:%M')
+
+            old_rows = read()
+            new_post['id'] = len(old_rows)
+
+            already_posted = False
+
+            for old_post in old_rows:
+                if old_post['your_name'] == new_post['your_name'] and old_post['sponsorship_amount'] == new_post['sponsorship_amount'] and old_post['your_message'] == new_post['your_message']:
+                    already_posted = True
+
+            if not already_posted:
+                write_new_row(old_rows, new_post)
+
+            return redirect(url_for('index'))
+        
+        else:
+            return render_template('post_a_message.html')
 
     return render_template('post_a_message.html')
 
