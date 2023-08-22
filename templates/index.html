@@ -3,6 +3,10 @@
 {% block content %}
     <br>
     <br>
+    <img src="{{url_for('static', filename='fundraiser.jpg')}}" alt="Fundraiser image" class="center" width="66%">
+    <br>
+    <br>
+    <br>
     <h1>{% block title %}My name is Hannes, and I'm taking my bike on a solo journey of 5,000km from my hometown of Cambridge, UK, to Istanbul.</b> {% endblock %}</h1>
     <br>
     <p>Beginning on 23rd August 2023, it will be a long, arduous, exhausting, painful, and wonderful journey of one man, one bike, and one overcomplicated camping hammock. I am doing it <b>to try to raise $12,000</b> to support three charities: <a href="https://www.givingwhatwecan.org/charities/helen-keller-international">
@@ -10,13 +14,14 @@
     <a href="https://www.founderspledge.com/funds/climate-change-fund">Founders Pledge Climate Change Fund</a>, and 
     <a href="https://www.givingwhatwecan.org/charities/strongminds">StrongMinds</a>.</p>
 
-    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('route')}}';">The journey</button>
-    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The causes</button>
+    <p>From here, you can read about why I am supporting these causes, look at my travel journal, or track me on the map!</p>
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The Causes</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='https://from-england-to-istanbul.blogspot.com';">Travel Journal</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('route')}}';">Track me</button>
     <br>
     <br>
     <br>
-    <p>Each cause is quite different, but they have one thing in common: they are chosen so as to do as much good as possible with the money, on the basis of strong evidence collected by <a href="https://www.givingwhatwecan.org/">Giving What We Can</a> and <a href="https://www.givewell.org/">other independent evaluators</a>. No wishful thinking, corruption or administrative inefficiencies here; only real people and real help.</p>
-    
+
     <p>If you make a donation, <b>be sure to let me know and post a message</b> via <a href="{{ url_for('post_a_message') }}"> this form</a>!
     It means a huge amount to me personally to have your support on my long journey, and creates a buzz that encourages others to help too. If you wish, you can choose to remain anonymous and just post a message, or even just register your donation.
     <p>If you have any questions, or you'd prefer to let me know by email, just send me a message at <a href = "mailto: hannes.whittingham@gmail.com">hannes.whittingham@gmail.com</a>!</p>

@@ -11,8 +11,11 @@ hostname = os.uname()[1]
 
 if hostname == 'website-vm':
     csv_file_path = '/var/www/from-england-to-istanbul/sponsorship.csv'
+    image_location = '/var/www/from-england-to-istanbul/images/fundraiser.jpg'
 else:
     csv_file_path = 'sponsorship_test_file.csv'
+    image_location = '/mnt/c/Users/hanne/FromEnglandToIstanbul/images/fundraiser.jpg'
+
 
 fieldnames = ['id', 'date', 'time', 'your_name','sponsorship_currency','sponsorship_amount','your_message','your_email']    
 
@@ -102,7 +105,7 @@ def index():
                 raised += eur_in_usd*amount
         except:
             pass
-    return render_template('index.html', sponsorship_messages=sponsorship_messages, raised=raised)
+    return render_template('index.html', sponsorship_messages=sponsorship_messages, raised=raised, image_location=image_location)
 
 @app.route('/route')
 def route():

@@ -6,10 +6,17 @@
     <h1>{% block title %}Three causes, three huge outcomes{% endblock %}</h1>
     <br>
     <br>
-    <p>With my own donation, I will be supporting each of the three causes equally. However, <b>you can choose which to support</b> using the 'Edit Allocation' button after clicking 'Donate' on the sponsorship page.</p>
-    <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
+    <p>Each charity is quite different, but they have <b>one thing in common</b>: they are chosen so as to do <b>as much good as possible</b> with the money in their respective areas, on the basis of strong evidence collected by <a href="https://www.givingwhatwecan.org/">Giving What We Can</a> and <a href="https://www.givewell.org/">other independent evaluators</a>. No wishful thinking, corruption or administrative inefficiencies here; only real people and real help.</p>
+
+    <p>With my own donation, I will be supporting each of the three causes equally. However, <b>you can choose which to support</b> using the 'Edit Allocation' button after clicking 'Donate' on the fundraising page at Giving What We Can.</p>
+    <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Fundraising page</button>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>
     <br>
+    <br>
+    <br>
+    <a href="https://www.givingwhatwecan.org/charities/helen-keller-international">
+        <img src="{{url_for('static', filename='helen_keller.webp')}}" alt="Fundraiser image" width="12%">
+    </a>
     <br>
     <br>
     <h4>
@@ -19,9 +26,15 @@
     </h4>
     <p>Helen Keller International's vitamin A supplementation program is a stunningly effective intervention preventing <b>visual impairment, blindness and death</b> in children living in developing countries.</p>
     
-    <p>The WHO estimates that <a href="https://www.who.int/data/nutrition/nlis/info/vitamin-a-deficiency">250,000-500,000 vitamin A-deficient children</a> become blind annually with half dying within the year. Givewell, an independent research organisation, estimates conservatively that Helen Keller's program <a href="https://www.givewell.org/impact-estimates#Impact_metrics_for_grants_to_GiveWells_top_charities">prevents one of these deaths for every $4,000 donated</a> by providing supplements to fill nutritional gaps in restricted local diets.</p>
+    <p>The WHO estimates that <a href="https://www.who.int/data/nutrition/nlis/info/vitamin-a-deficiency">250,000-500,000 vitamin A-deficient children</a> become blind annually with half dying within the year. Givewell, an independent research organisation, estimates - conservatively - that Helen Keller's program <a href="https://www.givewell.org/impact-estimates">prevents one of these deaths for every $4,000 donated</a> by providing supplements to fill nutritional gaps in restricted local diets.</p>
     
-    <p>This means that <b>we can reasonably hope to prevent a child's death as a part of this fundraising effort</b>.</p>
+    <h5>Estimated outcome</h5>
+    <p>We can reasonably hope to <b>prevent a child's death</b> by raising $4,000 for Helen Keller's vitamin A program.</p>
+    <br>
+    <a href="https://www.founderspledge.com/funds/climate-change-fund">
+        <img src="{{url_for('static', filename='founders_pledge.webp')}}" alt="Fundraiser image" class="center" width="12%">
+    </a>
+    <br>
     <br>
     <h4>
         <a href="https://www.founderspledge.com/funds/climate-change-fund">
@@ -32,12 +45,19 @@
     
     <p>Have you ever heard of <a href="https://www.terrapraxis.org/projects/repowering-coal">Coal Repowering</a>? I hadn't either; it's not widely known. It refers to the idea of replacing the carbon-spewing heart of a coal power station with a zero-emissions, safe modern nuclear reactor, while making use of all the existing infrastructure - site, heat and power transmission, workforce, investment - of the original plant.</p>
 
-    <p>As unsexy as it sounds, the potential scale of emissions reduction here is immense: fully <b>12bn of the global 35bn tons of annual emissions</b> are emitted by coal power stations. Crucially, Terra Praxis has found a way to address this without requiring politicians or investors to risk punishment by shutting down a plant, making it a <b>realist, practical solution</b> to the problem.</p>
-        
-    <p>Terra Praxis got started with a grant from the Founders Pledge Climate Change Fund and are now the key organisation developing and promoting the Coal Repowering process.</p>
+    <p>The potential scale of emissions reduction here is immense: fully <b>12bn of the global 35bn tons of annual emissions</b> are emitted by coal power stations. Crucially, Terra Praxis has found a way to address this without requiring politicians or investors to risk punishment by shutting down a plant, making it a <b>realist, practical solution</b> to the problem. Terra Praxis got started with a grant from the Founders Pledge Climate Change Fund, and are now the key organisation developing and promoting the Coal Repowering process.</p>
 
+    <p>Estimating the outcome of donating here is more difficult, but it's possible to make a rough guess. Much of the the fund's support goes to another organisation called <a href="https://www.catf.us/">Clean Air Task Force (CATF)</a>; Founders Pledge made an estimate in 2018 that <a href="https://www.catf.us/timeline/rated-top-climate-charity/">CATF prevents one tonne of carbon dioxide equivalent from being emitted for every $0.10-$1 donated</a>. We can take the upper end of this to be conservative, and assume that the fund's other investments are roughly as effective.</p>
+
+    <h5>Estimated outcome</h5>
+    <p>We can reasonably hope to <b>prevent the emission of <i>very roughly</i> 4,000 tonnes of carbon dioxide equivalent</b> (perhaps about 10 lifetime's worth for someone in the UK) by raising $4,000 for the Founders Pledge Climate Change Fund.</p>
     <br>
+    
 
+    <a href="https://www.givingwhatwecan.org/charities/strongminds">
+        <img src="{{url_for('static', filename='strong_minds.webp')}}" alt="Fundraiser image" class="center" width="15%">
+    </a>
+    <br>
     <h4>
         <a href="https://www.givingwhatwecan.org/charities/strongminds">
             StrongMinds
@@ -47,11 +67,17 @@
 
 	<p>StrongMinds is responding to this by providing <b>free interpersonal group therapy to women in sub-Saharan Africa</b>, using an approach that has been shown to be effective in randomised controlled trials, the gold standard of evidence. Founders Pledge estimates that they <a href="https://www.founderspledge.com/research/mental-health-report-summary">prevent one year of severe major depressive disorder for roughly $250</a>.</p>
     
-    <p>Having been affected by depression personally, I know what that year means. Those women in sub-Saharan Africa are just as real as I am, and I want to act to support them.</p>
+    <p>Having been affected by depression personally, I know what that year means. Those women in sub-Saharan Africa are just as real as I am, and I want to act on their behalf.</p>
 
-    We can reasonably hope to prevent a decade of severe depression as a part of this fundraising effort. 
-
-
+    <h5>Estimated outcome</h5>
+    <p>We can reasonably hope to <b>prevent 15 years of severe depression</b> by raising $4,000 for StrongMinds.</p>
+    <br>
+    <br>
+    <h3>I believe these things are worth doing</h3>
+    <p>I hope it's clear that I believe the charities above will accomplish real good for real people with your donation. If you'd like to make a support me it would mean a huge amount, and make me feel that my long journey has been worthwhile!</p>
+    <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>
+    <br>
     <br>
     <br>
     <br>
