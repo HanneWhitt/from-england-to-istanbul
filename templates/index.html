@@ -14,7 +14,17 @@
     <a href="https://www.founderspledge.com/funds/climate-change-fund">Founders Pledge Climate Change Fund</a>, and 
     <a href="https://www.givingwhatwecan.org/charities/strongminds">StrongMinds</a>.</p>
 
-    <p>From here, you can read about why I am supporting these causes, look at my travel journal, or track me on the map!</p>
+    <p>If we reach the target, it should be enough to: 
+        <ul>
+            <li>Save one child living in the developing world from suffering <b>blindness, followed by death</b>, due to vitamin A deficiency;</li>
+            <li>Prevent the emission of very roughly <b>4,000 tonnes of carbon dioxide equivalent</b>;</li>
+            <li>Prevent about <b>15 years' worth of severe depression</b> in women in sub-Saharan Africa.</li>
+          </ul>
+    <i><b>I believe these things are worth doing.</b></i>
+    </p>
+    <br>
+    <br>
+    <p>From here, you can read more about the causes and impact estimates, look at my travel journal, or track my progress on the map!</p>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The Causes</button>
     <button type="button" class="btn btn-primary" onclick="location.href='https://from-england-to-istanbul.blogspot.com';">Travel Journal</button>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('route')}}';">Track me</button>
@@ -22,8 +32,7 @@
     <br>
     <br>
 
-    <p>If you make a donation, <b>be sure to let me know and post a message</b> via <a href="{{ url_for('post_a_message') }}"> this form</a>!
-    It means a huge amount to me personally to have your support on my long journey, and creates a buzz that encourages others to help too. If you wish, you can choose to remain anonymous and just post a message, or even just register your donation.
+    <p>If you make a donation, <b>be sure to let me know by posting a message on <a href="{{ url_for('post_a_message') }}"> this form</a></b>! It means a huge amount to me to have your support on my long journey, and creates a buzz that encourages others to help too. If you wish, you can choose to remain anonymous and just post a message, or even just register your donation.
     <p>If you have any questions, or you'd prefer to let me know by email, just send me a message at <a href = "mailto: hannes.whittingham@gmail.com">hannes.whittingham@gmail.com</a>!</p>
     <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>

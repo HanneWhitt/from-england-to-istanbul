@@ -10,7 +10,7 @@ import pytz
 hostname = os.uname()[1]
 
 if hostname == 'website-vm':
-    csv_file_path = '/var/www/from-england-to-istanbul/sponsorship_test_file.csv'
+    csv_file_path = '/var/www/from-england-to-istanbul/sponsorship.csv'
     image_location = '/var/www/from-england-to-istanbul/images/fundraiser.jpg'
 else:
     csv_file_path = 'sponsorship_test_file.csv'
@@ -105,6 +105,7 @@ def index():
                 raised += eur_in_usd*amount
         except:
             pass
+    sponsorship_messages.reverse()
     return render_template('index.html', sponsorship_messages=sponsorship_messages, raised=raised, image_location=image_location)
 
 @app.route('/route')
