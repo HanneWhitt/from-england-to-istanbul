@@ -857,3 +857,6 @@
 [Sun Aug 27 15:59:57.722229 2023] [wsgi:error] [pid 5244:tid 140527598196480] [client 82.132.233.244:43506]     sponsorship_messages = sponsorship_messages.reverse(), referer: https://from-england-to-istanbul.co.uk/route
 [Sun Aug 27 15:59:57.722236 2023] [wsgi:error] [pid 5244:tid 140527598196480] [client 82.132.233.244:43506] AttributeError: 'NoneType' object has no attribute 'reverse', referer: https://from-england-to-istanbul.co.uk/route
 [Sun Aug 27 16:00:46.895999 2023] [wsgi:error] [pid 5411:tid 140357017495296] [client 82.132.233.244:41982] /, referer: https://from-england-to-istanbul.co.uk/route
+[Sun Aug 27 16:05:30.840728 2023] [wsgi:error] [pid 5411:tid 140356754589440] [client 167.94.145.55:57170] /
+[Sun Aug 27 16:05:31.655491 2023] [wsgi:error] [pid 5412:tid 140356897199872] [client 167.94.145.55:58530] /
+[Sun Aug 27 16:09:37.484953 2023] [wsgi:error] [pid 6064:tid 140423452407552] [client 109.9.44.118:46528] /
