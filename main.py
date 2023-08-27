@@ -23,13 +23,13 @@ fieldnames = ['id', 'date', 'time', 'your_name','sponsorship_currency','sponsors
 def read():
     pwd = os.getcwd()
     print(pwd)
-    with open(csv_file_path) as csv_file:
+    with open(csv_file_path, encoding='utf-8') as csv_file:
         csv_reader = csv.DictReader(csv_file, delimiter=',')
         return [d for d in csv_reader]
 
 
 def write_new_row(old_rows, new_dict):
-    with open(csv_file_path, mode='w') as csv_file:
+    with open(csv_file_path, mode='w', encoding='utf-8') as csv_file:
         csv_writer = csv.DictWriter(csv_file, fieldnames, delimiter=',')
         csv_writer.writeheader()
         for d in old_rows:

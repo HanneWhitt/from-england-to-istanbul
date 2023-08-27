@@ -1,4 +1,5 @@
 id,date,time,your_name,sponsorship_currency,sponsorship_amount,your_message,your_email
-0,18 Aug 2023,21:00,Anonymous,USD,32,,
-1,21 Aug 2023,17:10,Hannes Whittingham,GBP,5000,Transaction in progress.,
-0,21 Aug 2023,17:22,Anonymous,GBP,150,,
+0,18 Aug 2023,21:00,Anonymous,$,32,,
+1,21 Aug 2023,17:10,Hannes Whittingham,£,5000,Transaction in progress.,
+2,21 Aug 2023,17:22,Anonymous,£,150,,
+3,27 Aug 2023,11:24,Joe Bloggs,€,10.00,THis is a message!,hi@hi.com
