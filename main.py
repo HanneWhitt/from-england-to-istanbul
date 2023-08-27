@@ -10,7 +10,7 @@ import pytz
 hostname = os.uname()[1]
 
 if hostname == 'website-vm':
-    csv_file_path = '/var/www/from-england-to-istanbul/sponsorship.csv'
+    csv_file_path = '/var/www/from-england-to-istanbul/sponsorship_test_file.csv'
     image_location = '/var/www/from-england-to-istanbul/images/fundraiser.jpg'
 else:
     csv_file_path = 'sponsorship_test_file.csv'
