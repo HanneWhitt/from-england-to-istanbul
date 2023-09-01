@@ -108,6 +108,10 @@ def index():
     sponsorship_messages.reverse()
     return render_template('index.html', sponsorship_messages=sponsorship_messages, raised=raised, image_location=image_location)
 
+@app.route('/livetracker')
+def livetracker():
+    return render_template('livetracker.html')
+
 @app.route('/route')
 def route():
     return render_template('route.html')
