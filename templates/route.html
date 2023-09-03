@@ -6,7 +6,11 @@
     <h1>{% block title %} Follow me on my journey! {% endblock %}</h1>
     <br>
     <br>
-    <p>Take a look at the map below to track me as I travel - I'm the little orange bicycle!</p>
+    <p>Take a look at the map below to see an outline of the journey, or click below to track me in real time!</p>
+
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('livetracker')}}';">Where is Hannes?</button>
+    <br>
+    <br>
 
     <p>Instead of taking the shortest route, directly overland, I've chosen a longer one based around the three great ancient cities of Rome, Athens, and Constantinople. From Canterbury cathedral, I will be following the footsteps of medieval pilgrims on the <a href="https://en.wikipedia.org/wiki/Via_Francigena">Via Francigena</a> across the Alps and all the way down to Brindisi in the heel of Italy, setting sail from the same port that took them to the Holy Land. From Athens, I will cross the Aegean to visit the sites of two of the <a href="https://en.wikipedia.org/wiki/Seven_Wonders_of_the_Ancient_World">Seven Wonders of the Ancient World</a>, the Mausoleum at Halicarnassus and the Temple of Diana at Ephesus, before reaching the end of my journey outside the <a href="https://www.hagiasophia.com/">Hagia Sophia</a> in Istanbul.</p>
 
@@ -14,7 +18,6 @@
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The Causes</button>
     <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>
-    <br>
     <br>
     <br>
     <iframe src="https://www.google.com/maps/d/embed?mid=17JWnkjnEYe7rFeEGgd_ULKU96RfQRTc&ehbc=2E312F&noprof=1" width="100%" height="720"></iframe>    <br>

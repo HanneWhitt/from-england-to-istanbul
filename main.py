@@ -112,6 +112,10 @@ def index():
 def livetracker():
     return render_template('livetracker.html')
 
+@app.route('/livetracker_route')
+def livetracker_route():
+    return render_template('livetracker_route.html')
+
 @app.route('/route')
 def route():
     return render_template('route.html')

@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta itemprop="description" content="Where is Hannes?">
+    <meta itemprop="image" content="https://i.imgur.com/2o2QlvU.png">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.26.0/mapbox-gl.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/2.0.3/timeago.min.js"></script>
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -16,7 +24,37 @@
             color: #970020;
             background-color: #ffd5de;
         }
-
+        #map {
+            width: 100%;
+            height: 720;
+        }
+        #marker {
+            background-size: cover;
+            width: 50px;
+            height: 63px;
+            cursor: pointer;
+        }
+        .mapboxgl-popup {
+            max-width: 200px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .anyofimgclass{
+            width: 100%;
+            max-width: 720px;
+            height: auto;
+        }
+        .charityimgclass12{
+            width: 40%;
+            max-width: 120px;
+            height: auto;
+        }
+        .charityimgclass15{
+            width: 50%;
+            max-width: 150px;
+            height: auto;
+        }
     </style>
   </head>
   <body>
@@ -40,11 +78,16 @@
             <li class="nav-item active">
                 <a class="nav-link" href="https://from-england-to-istanbul.blogspot.com">Journal</a>
             </li>
-            </ul>
             <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="{{ url_for('post_a_message')}}">Post a message</a>
             </li>
+            </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="{{ url_for('index')}}#Supporters">Supporters</a>
+            </li>
+            </ul>
             </ul>
             <ul class="navbar-nav">
             <li class="nav-item active">
