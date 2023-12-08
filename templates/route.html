@@ -6,7 +6,7 @@
     <h1>{% block title %} Follow me on my journey! {% endblock %}</h1>
     <br>
     <br>
-    <p>Take a look at the <a href="#outline-route-map">map below</a> and click the icons for a plan and description of the journey, or press the button below to track me in real time!</p>
+    <p>Take a look at the <a href="#outline-route-map">map below</a> to see the whole route and planned waypoints, or press the button below to see where I am right now on the livetracker.</p>
 
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('livetracker')}}';">Where is Hannes?</button>
     <br>
@@ -16,7 +16,7 @@
 
     <p><b>Riding 5,000km across Europe alone and unsupported will be a wonderful experience, but also at times very tough, and very lonely. I really believe in the causes I have chosen; if you'd like to support me by making a donation, it will help to spur me on my way!</b></p>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The Causes</button>
-    <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
+    <button type="button" class="btn btn-primary" onclick=" window.open('https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul','_blank')">Donate</button>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>
     <br>
     <br id="outline-route-map">

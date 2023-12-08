@@ -9,6 +9,7 @@
     <br>
     <h1>{% block title %}My name is Hannes, and I'm taking my bike on a solo journey of 5,000km from my hometown of Cambridge, UK, to Istanbul.</b> {% endblock %}</h1>
     <br>
+    <p><font size="+1" style="color: #8B0000;"><i><b>An update from Izmir, Turkey:</b> I am into the final 500km! The journey has been wonderful, incredibly hard, and totally life-changing - take a look at <a href="https://www.instagram.com/hannewhitt/" target=”_blank”>the pictures</a>, see the rides on <a href="https://www.strava.com/athletes/2998832" target=”_blank”>Strava</a>, or take a look at <a href="{{ url_for('route')}}">the map!</a> But it's not over yet. Please consider making a donation to support me on the final stretch - we are very close to the goal!</i></font></p>
     <p>Beginning on 23rd August 2023, it will be a long, arduous, exhausting, painful, and wonderful journey of one man, one bike, and one overcomplicated camping hammock. I am doing it <b>to try to raise $12,000</b> to support three charities: <a href="{{url_for('causes')}}#Helen-Keller-Vitamin-A">
         Helen Keller International's vitamin A supplementation program</a>, the 
     <a href="{{url_for('causes')}}#Founders-Pledge-Climate-Fund">Founders Pledge Climate Change Fund</a>, and 
@@ -22,10 +23,12 @@
           </ul>
     <i>I believe these things are worth doing.</i>
     </p>
-    <p>From here, you can read more about the causes and impact estimates, see my travel journal and photos, or track my progress on the map!</p>
+    <p>From here, you can read more about the causes and impact estimates, see the photos and strava rides, read my blog, or track my progress on the map!</p>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('causes')}}';">The Causes</button>
-    <button type="button" class="btn btn-primary" onclick="location.href='https://from-england-to-istanbul.blogspot.com';">Journal and photos</button>
-    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('route')}}';">Track me</button>
+    <button type="button" class="btn btn-primary" onclick=" window.open('https://www.instagram.com/hannewhitt/','_blank')">Photos</button>
+    <button type="button" class="btn btn-primary" onclick=" window.open('https://www.strava.com/athletes/2998832','_blank')">Strava</button>
+    <button type="button" class="btn btn-primary" onclick=" window.open('https://from-england-to-istanbul.blogspot.com','_blank')">Blog</button>
+    <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('route')}}';">The Map</button>
     <br>
     <br>
     <br>
@@ -34,7 +37,7 @@
     If you have any questions, or you'd prefer to let me know by email, just send me a message at <a href = "mailto: hannes.whittingham@gmail.com">hannes.whittingham@gmail.com</a>!
     <br>
     <br id="Supporters">
-    <button type="button" class="btn btn-primary" onclick="location.href='https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul'">Donate</button>
+    <button type="button" class="btn btn-primary" onclick=" window.open('https://www.givingwhatwecan.org/fundraisers/from-england-to-istanbul','_blank')">Donate</button>
     <button type="button" class="btn btn-primary" onclick="location.href='{{ url_for('post_a_message')}}';">Post a sponsorship message</button>
     <br>
     <br>
